@@ -4,7 +4,7 @@ import {Server,Socket} from "socket.io"
 import cors from "cors"
 const app = express();
 const server = createServer(app);
-const frontendURL = app.get('env') === 'development' ? 'http://localhost:3000' : 'https://sketck-book.vercel.app/';
+const frontendURL = app.get('env') === 'development' ? 'http://localhost:3000' : 'https://sketck-book.vercel.app';
 
 const io = new Server(server,
     {

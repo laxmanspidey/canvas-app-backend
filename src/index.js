@@ -9,7 +9,7 @@ const socket_io_1 = require("socket.io");
 const cors_1 = __importDefault(require("cors"));
 const app = (0, express_1.default)();
 const server = (0, http_1.createServer)(app);
-const frontendURL = app.get('env') === 'development' ? 'http://localhost:3000' : 'https://sketck-book.vercel.app/';
+const frontendURL = app.get('env') === 'development' ? 'http://localhost:3000' : 'https://sketck-book.vercel.app';
 const io = new socket_io_1.Server(server, {
     cors: {
         origin: frontendURL,
